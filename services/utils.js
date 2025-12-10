@@ -32,3 +32,14 @@ export function editTaks() {
         }
     }
 }
+
+export function delTsak(){
+    const id = readLineSync.question("which id: ")
+    for (let t of tasks){
+        if (Number(id) === Number(t.id)){
+            tasks.splice(tasks.indexOf(t),1)
+            return
+        }
+    }
+    throw new Error("id not exist")
+}
