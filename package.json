@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/shaye875/TO-DO/issues"
   },
-  "homepage": "https://github.com/shaye875/TO-DO#readme"
+  "homepage": "https://github.com/shaye875/TO-DO#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
