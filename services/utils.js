@@ -13,8 +13,8 @@ export function showByName() {
         if (p.name.toLowerCase() === name.toLowerCase()) {
             for (let key in p) {
                 console.log(key, p[key]);
-                return
             }
+            return
         }
     }
 }
@@ -22,7 +22,7 @@ export function showByName() {
 export function editTaks() {
     let id = readLineSync.question("which id: ")
     for (let t of tasks) {
-        if (Number(id) === Number(t.id)) {
+        if (id === t.id) {
             let num = readLineSync.question("hou many keys: ")
             for (let i = 1; i <= num; i++) {
                 let key = readLineSync.question("which key: ")
@@ -31,4 +31,15 @@ export function editTaks() {
             }
         }
     }
+}
+
+export function delTsak(){
+    const id = readLineSync.question("which id: ")
+    for (let t of tasks){
+        if (id === t.id){
+            tasks.splice(tasks.indexOf(t),1)
+            return
+        }
+    }
+    throw new Error("id not exist")
 }

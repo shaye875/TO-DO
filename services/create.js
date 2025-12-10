@@ -1,10 +1,11 @@
 import { tasks } from "../data/tasks.js";
+import { nanoid } from 'nanoid'
 
 export function createtTask(name,task,status){
    return {
-    id:tasks.length+1,
+    id:nanoid(),
     name:name,
-    dateCreate:new Date,
+    dateCreate:new Date(),
     task:task,
     status:status
    }
