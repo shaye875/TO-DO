@@ -1,0 +1,24 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000T\u0000O\u0000-\u0000D\u0000O\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaye875/TO-DO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/shaye875/TO-DO/issues"
+  },
+  "homepage": "https://github.com/shaye875/TO-DO#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
